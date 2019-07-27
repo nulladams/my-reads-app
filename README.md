@@ -1,3 +1,25 @@
+# MyReads Project
+
+This app helps you to control your reads and also it makes possible to search for new books, that can be added to the app.
+
+This is the first project of Udacity's React Fundamental Course.
+
+## Project Setup and launch
+
+- Install the dependencies - `npm install`
+- Install react router - `npm install --save react-router-dom`
+- Launch the app - `npm start`
+
+## Using the app
+
+With this app you can organize your reads according 3 categories: "Currently reading", "Wan to read", and "Read". To the select a category, click on the green button on the book's cover, and choose the category where the book should move. If you want to exclude a book from the reads, select "None".
+To search for books, click on the "+" button located at the right-bottom corner. Enter the term of interest according to search list below, and select the desire categorie to add the book to the reads.
+
+### Sarch Terms
+
+'Android', 'Art', 'Artificial Intelligence', 'Astronomy', 'Austen', 'Baseball', 'Basketball', 'Bhagat', 'Biography', 'Brief', 'Business', 'Camus', 'Cervantes', 'Christie', 'Classics', 'Comics', 'Cook', 'Cricket', 'Cycling', 'Desai', 'Design', 'Development', 'Digital Marketing', 'Drama', 'Drawing', 'Dumas', 'Education', 'Everything', 'Fantasy', 'Film', 'Finance', 'First', 'Fitness', 'Football', 'Future', 'Games', 'Gandhi', 'Homer', 'Horror', 'Hugo', 'Ibsen', 'Journey', 'Kafka', 'King', 'Lahiri', 'Larsson', 'Learn', 'Literary Fiction', 'Make', 'Manage', 'Marquez', 'Money', 'Mystery', 'Negotiate', 'Painting', 'Philosophy', 'Photography', 'Poetry', 'Production', 'Programming', 'React', 'Redux', 'River', 'Robotics', 'Rowling', 'Satire', 'Science Fiction', 'Shakespeare', 'Singh', 'Swimming', 'Tale', 'Thrun', 'Time', 'Tolstoy', 'Travel', 'Ultimate', 'Virtual Reality', 'Web Development', 'iOS'
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -66,3 +88,8 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+## License
+
+MIT
