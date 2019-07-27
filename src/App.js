@@ -13,7 +13,7 @@ class App extends Component {
 
   }
   render() {
-    const { books, changeBooksShelf } = this.state
+    const { books, changeBookShelf } = this.state
     return (
       <div className="App">
         <BooksListView
