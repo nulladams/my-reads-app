@@ -7,9 +7,11 @@ import React, { Component } from 'react'
 */
 class BooksShelf extends Component {
     render() {
+        const { shelfTitle } = this.props
         return (
-            <div>
-                <p>Shelves</p>
+            <div className="bookshelf">
+                <h2 className="bookshelf-title">{shelfTitle}</h2>
+
             </div>
         )
     }

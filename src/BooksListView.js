@@ -16,7 +16,15 @@ class BooksListView extends Component {
                 </div>
                 <div className="list-books-Content">
                     <div>
-                        <BooksShelf />
+                        <BooksShelf 
+                            shelfTitle="Currently Reading"
+                        />
+                        <BooksShelf 
+                            shelfTitle="Want to Read"
+                        />
+                        <BooksShelf 
+                            shelfTitle="Read"
+                        />
                     </div>
                 </div>
             </div>
