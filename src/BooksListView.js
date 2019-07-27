@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import BooksShelf from './BooksShelf'
 
 
 /**
@@ -15,7 +16,7 @@ class BooksListView extends Component {
                 </div>
                 <div className="list-books-Content">
                     <div>
-                        
+                        <BooksShelf />
                     </div>
                 </div>
             </div>
