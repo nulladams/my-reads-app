@@ -9,10 +9,17 @@ class App extends Component {
   state = {
     books: []
   }
+  changeBooksShelf = () => {
+
+  }
   render() {
+    const { books, changeBooksShelf } = this.state
     return (
       <div className="App">
-
+        <BooksListView
+          books={books}
+          onChangeBooksShelf={changeBooksShelf}
+        />
       </div>
     )
   }

@@ -7,9 +7,10 @@ import React, { Component } from 'react'
 */
 class BooksListView extends Component {
     render() {
+        console.log(this.props.books)
         return (
             <div>
-                
+                <p>teste</p>
             </div>
         )
     }
