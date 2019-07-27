@@ -7,9 +7,17 @@ import React, { Component } from 'react'
 */
 class BooksListView extends Component {
     render() {
+        const { books, onChangeBookShelf } = this.props
         return (
-            <div>
-                <p>teste</p>
+            <div className="list-books">
+                <div className="list-books-title">
+                    <h1>My Reads</h1>
+                </div>
+                <div className="list-books-Content">
+                    <div>
+                        
+                    </div>
+                </div>
             </div>
         )
     }
