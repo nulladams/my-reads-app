@@ -6,10 +6,13 @@ import BooksListView from './BooksListView'
 * @constructor
 */
 class App extends Component {
+  state = {
+    books: []
+  }
   render() {
     return (
       <div className="App">
-        
+
       </div>
     )
   }
