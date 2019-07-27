@@ -9,7 +9,7 @@ class App extends Component {
   state = {
     books: []
   }
-  changeBooksShelf = () => {
+  changeBookShelf = () => {
 
   }
   render() {
@@ -18,7 +18,7 @@ class App extends Component {
       <div className="App">
         <BooksListView
           books={books}
-          onChangeBooksShelf={changeBooksShelf}
+          onChangeBookShelf={changeBookShelf}
         />
       </div>
     )
