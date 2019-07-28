@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import BooksListView from './BooksListView'
 import './App.css'
+import * as BooksAPI from './utils/BooksAPI'
 
 /**
 * @description Main class that start the app and has the books state
@@ -9,6 +10,14 @@ import './App.css'
 class App extends Component {
   state = {
     books: []
+  }
+  componentDidMount() {
+    BooksAPI.getAll()
+      .then(books => {
+        this.setState({
+          books
+        })
+      })
   }
   changeBookShelf = () => {
 
