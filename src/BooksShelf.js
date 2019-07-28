@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import BooksSession from './BooksSession'
 
 
 /**
@@ -11,7 +12,11 @@ class BooksShelf extends Component {
         return (
             <div className="bookshelf">
                 <h2 className="bookshelf-title">{shelfTitle}</h2>
-
+                <BooksSession 
+                    shelfSession={shelfSession}
+                    books={books}
+                    onChangeBookShelf={onChangeBookShelf}
+                />
             </div>
         )
     }
