@@ -5,7 +5,6 @@ class BooksSession extends Component {
         const { shelfSession, books, onChangeBookShelf } = this.props
         return(
             <div className="bookshelf-books">
-
             </div>
         )
     }
