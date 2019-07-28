@@ -7,7 +7,7 @@ import React, { Component } from 'react'
 */
 class BooksShelf extends Component {
     render() {
-        const { shelfTitle } = this.props
+        const { shelfTitle, shelfSession, books, onChangeBookShelf } = this.props
         return (
             <div className="bookshelf">
                 <h2 className="bookshelf-title">{shelfTitle}</h2>

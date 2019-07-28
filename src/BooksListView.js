@@ -18,12 +18,21 @@ class BooksListView extends Component {
                     <div>
                         <BooksShelf 
                             shelfTitle="Currently Reading"
+                            shelfSession="currentlyReading"
+                            books={books}
+                            onChangeBookShelf={onChangeBookShelf}
                         />
                         <BooksShelf 
                             shelfTitle="Want to Read"
+                            shelfSession="wantToRead"
+                            books={books}
+                            onChangeBookShelf={onChangeBookShelf}
                         />
                         <BooksShelf 
                             shelfTitle="Read"
+                            shelfSession="read"
+                            books={books}
+                            onChangeBookShelf={onChangeBookShelf}
                         />
                     </div>
                 </div>
