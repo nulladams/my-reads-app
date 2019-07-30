@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Book from './Book'
 
 class BooksSession extends Component {
     render() {
@@ -8,7 +9,7 @@ class BooksSession extends Component {
                 <ol className="books-grid">
                     {books.filter(book => book.shelf === shelfSession)
                         .map(book => (
-                            <li>{book.title}</li>
+                            <Book key={book.id} book={book} onChangeBookShelf={onChangeBookShelf} />
                         ))
                     }
                 </ol>
