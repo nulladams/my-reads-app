@@ -16,6 +16,8 @@ class Book extends Component {
                                      height: 193, 
                                      backgroundImage: `url(${book.imageLinks.smallThumbnail})` }}
                         ></div>
+                        <div>{book.title}</div>
+                        <div>{book.authors}</div>
                     </div>
                 </div>
             </li>
