@@ -9,16 +9,16 @@ class Book extends Component {
         const { book, onChangeBookShelf } = this.props
         return(
             <li>
-                <div>
-                    <div>
-                        <div 
-                            style={{ width: 128, 
+                <div className="book">
+                    <div className="book-top">
+                        <div className="book-cover"
+                              style={{ width: 128, 
                                      height: 193, 
                                      backgroundImage: `url(${book.imageLinks.smallThumbnail})` }}
                         ></div>
-                        <div>{book.title}</div>
-                        <div>{book.authors}</div>
                     </div>
+                    <div className="book-title">{book.title}</div>
+                    <div className="book-authors">{book.authors}</div>
                 </div>
             </li>
         )
