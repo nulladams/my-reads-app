@@ -19,8 +19,17 @@ class App extends Component {
         })
       })
   }
-  changeBookShelf = () => {
-
+  changeBookShelf = (book, newShelfSession) => {
+    console.log('change')
+    BooksAPI.update(book, newShelfSession)
+      .then(() => {
+        book.shelf = newShelfSession
+        this.setState((currState) => ({
+          books: currState.books.filter((b) => {
+            return book.id !== b.id
+          }).concat([book])
+        }))
+      })
   }
   render() {
     const { books, changeBookShelf } = this.state
@@ -28,7 +37,7 @@ class App extends Component {
       <div className="App">
         <BooksListView
           books={books}
-          onChangeBookShelf={changeBookShelf}
+          onChangeBookShelf={this.changeBookShelf}
         />
       </div>
     )

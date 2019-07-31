@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import BookShelfChanger from './BookShelfChanger'
 
 /**
 * @description Represents a Book
@@ -16,6 +17,10 @@ class Book extends Component {
                                      height: 193, 
                                      backgroundImage: `url(${book.imageLinks.smallThumbnail})` }}
                         ></div>
+                        <BookShelfChanger 
+                            book={book}
+                            onChangeBookShelf={onChangeBookShelf}
+                        />
                     </div>
                     <div className="book-title">{book.title}</div>
                     <div className="book-authors">{book.authors}</div>
