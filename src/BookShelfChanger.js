@@ -14,7 +14,7 @@ class BookShelfChanger extends Component {
     render() {
         const { book } = this.props
         return(
-            <div>
+            <div className="book-shelf-changer">
                 <select value={book.hasOwnProperty('shelf') ? book.shelf : "none"} onChange={this.handleChange}>
                     <option value="move" disabled>Move to...</option>
                     <option value="currentlyReading">Currently Reading</option>
@@ -22,7 +22,6 @@ class BookShelfChanger extends Component {
                     <option value="read">Read</option>
                     <option value="none">None</option>
                 </select>
-
             </div>
         )
     }
