@@ -3,6 +3,7 @@ import BooksListView from './BooksListView'
 import './App.css'
 import * as BooksAPI from './utils/BooksAPI'
 import { Route } from 'react-router-dom'
+import SearchBooks from './SearchBooks'
 
 /**
 * @description Main class that start the app and has the books state
@@ -41,6 +42,9 @@ class App extends Component {
             books={books}
             onChangeBookShelf={this.changeBookShelf}
           />
+        )} />
+        <Route path='/search' render={() => (
+          <SearchBooks />        
         )} />
       </div>
     )
