@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import BooksListView from './BooksListView'
 import './App.css'
 import * as BooksAPI from './utils/BooksAPI'
+import { Route } from 'react-router-dom'
 
 /**
 * @description Main class that start the app and has the books state
@@ -32,13 +33,15 @@ class App extends Component {
       })
   }
   render() {
-    const { books, changeBookShelf } = this.state
+    const { books } = this.state
     return (
       <div className="App">
-        <BooksListView
-          books={books}
-          onChangeBookShelf={this.changeBookShelf}
-        />
+        <Route exact path='/' render={() => (
+          <BooksListView
+            books={books}
+            onChangeBookShelf={this.changeBookShelf}
+          />
+        )} />
       </div>
     )
   }
