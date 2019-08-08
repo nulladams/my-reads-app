@@ -6,6 +6,7 @@ import React, { Component } from 'react'
 */
 class SearchBooks extends Component {
     render() {
+        const { books, onChangeBookShelf } = this.props
         return(
             <div>
                 Search
