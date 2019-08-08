@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import BooksShelf from './BooksShelf'
+import OpenSearch from './OpenSearch'
 
 
 /**
@@ -36,6 +37,7 @@ class BooksListView extends Component {
                         />
                     </div>
                 </div>
+                <OpenSearch />
             </div>
         )
     }
