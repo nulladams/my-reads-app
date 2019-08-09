@@ -26,13 +26,13 @@ class SearchBooksBar extends Component {
                     className="close-search"
                 >Close</Link>
                 <div className="search-books-input-wrapper">
-                <input
-                    type="text"
-                    placeholder="Search by title or author"
-                    value={query}
-                    onChange={(event) => this.handleChange(event.target.value)}
-                />
-            </div>
+                    <input
+                        type="text"
+                        placeholder="Search by title or author"
+                        value={query}
+                        onChange={(event) => this.handleChange(event.target.value)}
+                    />
+                </div>
             </div>
         )
     }
