@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import SearchBooksBar from './SearchBooksBar'
+import SearchBooksResults from './SearchBooksResults'
 import * as BooksAPI from './utils/BooksAPI'
 
 /**
@@ -54,11 +55,11 @@ class SearchBooks extends Component {
         const { results } = this.state
         const { books, onChangeBookShelf } = this.props
         return(
-            <div>
-                <SearchBooksBar 
-                    results={results}
+            <div className="search-books">
+                <SearchBooksBar
                     onUpdateResults={this.updateResults}
                 />
+                <SearchBooksResults />
             </div>
         )
     }

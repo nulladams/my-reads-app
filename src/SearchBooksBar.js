@@ -20,7 +20,6 @@ class SearchBooksBar extends Component {
     }
     render() {
         const { query } = this.state
-        const { results } = this.props
         return(
             <div className="search-books-bar">
                 <Link
