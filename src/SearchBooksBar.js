@@ -11,6 +11,7 @@ class SearchBooksBar extends Component {
     }
     handleChange = (value) => {
         this.updateQuery(value)
+        this.props.onUpdateResults(value)
     }
     updateQuery = (query) => {
         this.setState((currState) => ({
@@ -19,6 +20,7 @@ class SearchBooksBar extends Component {
     }
     render() {
         const { query } = this.state
+        const { results } = this.props
         return(
             <div className="search-books-bar">
                 <Link
