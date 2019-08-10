@@ -61,6 +61,7 @@ class SearchBooks extends Component {
                 />
                 <SearchBooksResults 
                     results={results}
+                    books={books}
                     onChangeBookShelf={onChangeBookShelf}
                 />
             </div>
