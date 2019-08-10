@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Book from './Book'
 
 /**
 * @description Books results from the search
@@ -6,9 +7,19 @@ import React, { Component } from 'react'
 */
 class SearchBooksResults extends Component {
     render() {
+        const { results, onChangeBookShelf } = this.props
+    
         return(
             <div className="search-books-results">
-                <div>results</div>
+                <ol>
+                {results.map(book => (
+                    <Book 
+                        key={book.id}
+                        book={book}
+                        onChangeBookShelf={onChangeBookShelf}
+                    /> 
+                ))}
+                </ol>
             </div>
         )
     }

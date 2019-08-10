@@ -59,7 +59,10 @@ class SearchBooks extends Component {
                 <SearchBooksBar
                     onUpdateResults={this.updateResults}
                 />
-                <SearchBooksResults />
+                <SearchBooksResults 
+                    results={results}
+                    onChangeBookShelf={onChangeBookShelf}
+                />
             </div>
         )
     }
